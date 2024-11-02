@@ -1,0 +1,168 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер чату */
+#chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Контейнер для повідомлень */
+#messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+/* Повідомлення */
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e1f3fb;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+/* Повідомлення від користувача сторінки */
+.message.self {
+    align-self: flex-end;
+    background-color: #d1e7dd;
+}
+
+/* Ім'я користувача */
+.message .username {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Текст повідомлення */
+.message .content {
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Час відправки */
+.message .timestamp {
+    font-size: 0.8em;
+    color: #999;
+    align-self: flex-end;
+    margin-top: 5px;
+}
+
+/* Поле введення та кнопка */
+#message-input {
+    padding: 15px;
+    border: none;
+    flex: 1;
+    font-size: 16px;
+    border-top: 1px solid #ddd;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-top: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Контейнер введення */
+#input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#message-input:focus {
+    outline: none;
+}
+
+#status {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #666;
+}
+
+.status.success {
+    color: green;
+}
+
+.status.error {
+    color: red;
+}
+
+.status.pending {
+    color: orange;
+}
+
+/* Контейнер авторизації */
+#login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-container button:hover {
+    background-color: #45a049;
+}
+
+.system-message {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#group-name-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <input type="text" id="username-input" placeholder="Введіть своє ім'я">
+        <button onclick="connectToChat()">Приєднатися до чату</button>
+    </div>
+    <div id="chat-container">
+        <div class="group-buttons">
+            <button onclick="createGroup()">Створити групу</button>
+            <button onclick="inviteToGroup()">Запросити до групи</button>
+        </div>
+        <div id="messages"></div>
+        <input type="text" id="group-name-input" placeholder="Назва групи (необов'язково)">
+        <input type="text" id="message-input" placeholder="Type a message...">
+        <div id="status"></div>
+        <button onclick="handleSendMessage()">Надіслати</button>
+        <button onclick="startRecording()">Начать запись</button>
+        <button onclick="stopRecording()">Остановить запись</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
